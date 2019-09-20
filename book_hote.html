@@ -1,0 +1,132 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Book Now!!!</title>
+  
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top" >
+    <div class="container" id="myHeader" >
+        <a class="navbar-brand" href="index.html">HOTELS</a>
+      <a class="btn btn-primary" href="login.html">Sign in</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+<header class="masthead text-white text-center">
+
+    <div class="container" id="Book_container">
+        <div class="row"  >
+        <div class="col-12 col-md-7">
+        <h1 >BOOK A ROOM</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form  action="#">
+        <div class="form-row">
+        <div class="col-6 col-md-7 mb-2 mb-md-0">
+        <input id="night" type="number" class="form-control form-control-lg " placeholder="How Many Night" min="1">
+        </div>
+       
+        <div class="col-7 col-md-7 mb-2 mb-md-0">
+            <input id="emailAddress" type="email" class="form-control form-control-lg" placeholder="Enter Email Address">
+          </div>
+          <div class="col-7 col-md-7 mb-2 mb-md-0">
+              <input id="phone_no" type="number" class="form-control form-control-lg" placeholder="EnterYour Phone Number">
+            </div>
+            <div class="col-7 col-md-7 mb-2 mb-md-0">
+                    <input id="total_amount" type="number" class="form-control form-control-lg" placeholder="Total Amount" readonly>
+                  </div>
+        
+        <br>
+        <div class="col-12 col-md-3">
+        <button  id="book_room" type="submit" class="btn btn-block btn-lg btn-primary">Book Room</button>
+        </div>
+        
+        <div class="col-12 col-md-7"><a href="#" id="pay"></a></div>
+        <div class="col-12 col-md-7"><a href="index.html" id="login" style="color: cornsilk">Cancel Request</a></div>
+        </div>
+        </form>
+        
+        </div>
+        <div id="Room Booked"></div>
+        </div>              
+        </div>
+
+
+
+</header>
+<div id="paypal-button"></div>
+ <footer class="footer bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                  <a href="#">About</a>
+                </li>
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="#">Contact</a>
+                </li>
+               
+            </div>
+            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item mr-3">
+                  <a href="#">
+                    <i class="fab fa-facebook fa-2x fa-fw"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item mr-3">
+                  <a href="#">
+                    <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-instagram fa-2x fa-fw"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      <!-- Bootstrap core JavaScript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="./create_hotel.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+      
+
+      
+    
+</body>
+</html>

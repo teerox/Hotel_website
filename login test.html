@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Bikash Test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <a class="Your_class" href="#" data-image="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">Show Image</a>
+</div>
+<div style="margin-left:250px;">
+    <a class="Your_class" href="#" data-image="http://www.therocks.com/media/52168/The_Rocks_Discovery_Museum_exterior.jpg">Another Image</a>
+</div>
+
+<img src="./img/second.jpg"  title="Smiley face"/>
+</body>
+</html>
+
+<script>
+$(".Your_class").mouseenter(function(){
+        if ($(this).parent('div').children('div.image').length) {
+            $(this).parent('div').children('div.image').show();
+        } else {
+            var image_name=$(this).data('image');
+            var imageTag='<div class="image" style="position:absolute;">'+'<img src="'+image_name+'" alt="image" height="100" />'+'</div>';
+            $(this).parent('div').append(imageTag);
+        }
+    });
+
+    $(".Your_class").mouseleave(function(){
+        $(this).parent('div').children('div.image').hide();
+    });</script>
